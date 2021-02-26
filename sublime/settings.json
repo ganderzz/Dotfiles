@@ -1,0 +1,22 @@
+{
+	"color_scheme": "Packages/Monokai++/themes/Monokai++.tmTheme",
+	"font_size": 14,
+	"font_face": "Fira Code",
+	"tab_size": 2,
+  "fold_buttons": false,
+	"translate_tabs_to_spaces": true,
+	"ignored_packages":
+	[
+		"Markdown",
+		"Vintage"
+	],
+  "index_exclude_patterns": [
+    "log/*",
+    "node_modules/*",
+    ".cache/*",
+    "*.log"
+  ],
+  "match_brackets": true,
+  "default_line_ending": "unix",
+	"theme": "Spacegray Eighties.sublime-theme"
+}

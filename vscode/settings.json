@@ -1,0 +1,82 @@
+// Place your settings in this file to overwrite the default settings
+{
+  "editor.fontFamily": "Fira Code, Hack",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 12,
+  "editor.lineHeight": 18,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "editor.formatOnSave": true,
+  "editor.suggestSelection": "first",
+  "editor.autoClosingQuotes": "never",
+  "editor.autoClosingBrackets": "never",
+  "editor.folding": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.snippetSuggestions": "none",
+  "editor.mouseWheelZoom": true,
+
+  "window.title": "${dirty}${rootName}${separator}${activeEditorShort}",
+  "window.menuBarVisibility": "toggle",
+  "window.zoomLevel": 1,
+
+  "terminal.integrated.fontFamily": "Fira Code, Hack",
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.rendererType": "auto",
+
+  "prettier.jsxBracketSameLine": false,
+  "prettier.printWidth": 120,
+  "prettier.singleQuote": false,
+  "prettier.tabWidth": 2,
+  "prettier.useTabs": false,
+  "prettier.trailingComma": "es5",
+  "prettier.bracketSpacing": true,
+  "prettier.requireConfig": false,
+
+  "emmet.showAbbreviationSuggestions": false,
+
+  "workbench.editor.showTabs": false,
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.activityBar.visible": true,
+
+  "zenMode.hideTabs": true,
+
+  "explorer.openEditors.visible": 0,
+  "explorer.sortOrder": "type",
+
+  "typescript.check.npmIsInstalled": false,
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "javascript.updateImportsOnFileMove.enabled": "never",
+
+  "breadcrumbs.enabled": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "workbench.iconTheme": "vscode-icons",
+  "python.formatting.provider": "black",
+
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "vsicons.dontShowNewVersionMessage": true,
+  "extensions.ignoreRecommendations": true,
+
+  // Fixes update issue with Windows not having permissions
+  "update.enableWindowsBackgroundUpdates": false,
+  "editor.lineNumbers": "off"
+}
