@@ -1,4 +1,3 @@
-// Place your settings in this file to overwrite the default settings
 {
   "editor.fontFamily": "Fira Code, Hack",
   "editor.fontLigatures": true,
@@ -76,7 +75,6 @@
   "vsicons.dontShowNewVersionMessage": true,
   "extensions.ignoreRecommendations": true,
 
-  // Fixes update issue with Windows not having permissions
   "update.enableWindowsBackgroundUpdates": false,
   "editor.lineNumbers": "off"
 }
