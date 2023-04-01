@@ -11,3 +11,7 @@ eval "$(starship init zsh)"
 alias ls="exa"
 alias ll="exa -l"
 alias py="python3"
+alias g="git"
+alias grep="rg"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

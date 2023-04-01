@@ -4,7 +4,12 @@ YELLOW="\033[1;33m"
 GREEN="\033[0;32m"
 NC="\033[0m"
 
-printf "${GREEN}Initializing DEV Environment...${NC}\n"
+printf "${GREEN}---------------------------------${NC}\n"
+printf "${GREEN}| Initializing DEV Environment... |${NC}\n"
+printf "${GREEN}---------------------------------${NC}\n\n"
+
+printf "${GREEN}Installing tpm (Tmux Package Manager)...${NC}\n"
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 which -s brew
 if [[ $? != 0 ]] ; then
