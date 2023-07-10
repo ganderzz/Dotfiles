@@ -5,6 +5,7 @@ brew "yarn"
 brew "nvm"
 brew "fzf"
 brew "ripgrep"
+brew "fd"
 
 cask "kdiff3"
 cask "vscode"
