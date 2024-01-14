@@ -1,4 +1,7 @@
+tap "homebrew/cask-fonts"
+
 brew "starship"
+brew "tmux"
 brew "exa"
 brew "node"
 brew "yarn"
@@ -6,7 +9,12 @@ brew "nvm"
 brew "fzf"
 brew "ripgrep"
 brew "fd"
+brew "neovim"
 
 cask "kdiff3"
-cask "vscode"
-cask "chrome"
+cask "visual-studio-code"
+cask "alacritty"
+
+cask "font-fira-mono-nerd-font"
+cask "font-fira-code-nerd-font"
+cask "font-symbols-only-nerd-font"
