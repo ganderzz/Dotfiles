@@ -14,6 +14,7 @@ brew "neovim"
 cask "kdiff3"
 cask "visual-studio-code"
 cask "alacritty"
+cask "obsidian"
 
 cask "font-fira-mono-nerd-font"
 cask "font-fira-code-nerd-font"
