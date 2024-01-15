@@ -1,0 +1,64 @@
+import = ["/Users/dylanpaulus/.config/alacritty/catppuccin/catppuccin-mocha.yml"]
+
+[colors.bright]
+black = "#3e4452"
+blue = "#61afef"
+cyan = "#56b6c2"
+green = "#98c379"
+magenta = "#c678dd"
+red = "#be5046"
+white = "#ffffff"
+yellow = "#d19a66"
+
+[colors.cursor]
+cursor = "#528bff"
+text = "#0b0b0b"
+
+[colors.normal]
+black = "#24272e"
+blue = "#61afef"
+cyan = "#56b6c2"
+green = "#98c379"
+magenta = "#c678dd"
+red = "#e06c75"
+white = "#ffffff"
+yellow = "#e5c07b"
+
+[colors.primary]
+background = "#24272e"
+foreground = "#ffffff"
+
+[colors.search.matches]
+background = "#e5c07b"
+foreground = "#3e4452"
+
+[colors.selection]
+background = "#3e4452"
+text = "#f1f1f1"
+
+[colors.vi_mode_cursor]
+cursor = "#333841"
+text = "#ffffff"
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 12
+
+[font.bold]
+family = "SauceCodePro Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "SauceCodePro Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "SauceCodePro Nerd Font"
+style = "Regular"
+
+[[keyboard.bindings]]
+action = "SpawnNewInstance"
+key = "Return"
+mods = "Control|Shift"
