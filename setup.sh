@@ -47,6 +47,8 @@ cp "${SCRIPT_DIR}/starship.toml" ~/.config/starship.toml
 mkdir -p ~/.config/alacritty
 cp "${SCRIPT_DIR}/alacritty.toml" ~/.config/alacritty/alacritty.toml
 
+cp "${SCRIPT_DIR}/.tmux.conf" ~/.tmux.conf
+
 printf "${GREEN}Copying over nvim config...${NC}\n"
 rsync -aqz "${SCRIPT_DIR}/nvim" ~/.config/nvim/
 
