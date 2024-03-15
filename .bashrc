@@ -8,8 +8,8 @@ compinit
 eval "$(starship init zsh)"
 
 #Aliases
-alias ls="exa"
-alias ll="exa -l"
+alias ls="eza"
+alias ll="eza -l"
 alias py="python3"
 alias g="git"
 alias grep="rg"
