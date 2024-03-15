@@ -34,6 +34,12 @@ if [[ $? != 0 ]] ; then
     # Install Homebrew
     printf "${GREEN}Installing Homebrew...${NC}\n"
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+    if [[ $MACHINE != "Mac" ]]; then
+        (echo; echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"') >> ~/.bashrc
+        eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+    fi
+    
 else
     printf "${YELLOW}Homebrew already installed. Updating...${NC}\n"
     brew update
