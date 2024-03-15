@@ -6,14 +6,28 @@ NC="\033[0m"
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
+# Figure out which distro we're using (primarily mac vs linux)
+unameOut="$(uname -s)"
+case "${unameOut}" in
+    Linux*)     MACHINE=Linux;;
+    Darwin*)    MACHINE=Mac;;
+    CYGWIN*)    MACHINE=Cygwin;;
+    MINGW*)     MACHINE=MinGw;;
+    MSYS_NT*)   MACHINE=Git;;
+    *)          MACHINE="UNKNOWN:${unameOut}"
+esac
+
 printf "${GREEN}----------------------------------${NC}\n"
 printf "${GREEN}| Initializing DEV Environment... |${NC}\n"
+printf "${YELLOW}| Setting up for ${MACHINE} |${NC}\n"
 printf "${GREEN}----------------------------------${NC}\n\n"
 
 mkdir -p ~/.config
 
-printf "${GREEN}Installing XCode dev tools...${NC}\n"
-xcode-select --install
+if [[ $MACHINE == "Mac" ]]; then
+    printf "${GREEN}Installing XCode dev tools...${NC}\n"
+    xcode-select --install
+fi
 
 printf "${GREEN}Installing tpm (Tmux Package Manager)...${NC}\n"
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
@@ -22,7 +36,7 @@ which -s brew
 if [[ $? != 0 ]] ; then
     # Install Homebrew
     printf "${GREEN}Installing Homebrew...${NC}\n"
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 else
     printf "${YELLOW}Homebrew already installed. Updating...${NC}\n"
     brew update
