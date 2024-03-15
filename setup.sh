@@ -41,6 +41,7 @@ else
     brew update
 fi
 
+export HOMEBREW_NO_AUTO_UPDATE=1 # Gotta go fast 
 printf "${GREEN}Installing Homebrew bundles...${NC}\n"
 brew bundle
 
