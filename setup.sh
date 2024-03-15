@@ -21,8 +21,6 @@ printf "${GREEN}----------------------------------${NC}\n\n"
 
 mkdir -p ~/.config
 cd $SCRIPT_DIR
-ls
-printf "DIR: ${SCRIPT_DIR}"
 
 if [[ $MACHINE == "Mac" ]]; then
     printf "${GREEN}Installing XCode dev tools...${NC}\n"
