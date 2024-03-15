@@ -20,9 +20,9 @@ printf "${YELLOW}| Setting up for ${MACHINE}   |${NC}\n"
 printf "${GREEN}----------------------------------${NC}\n\n"
 
 mkdir -p ~/.config
-
+cd $SCRIPT_DIR
 ls
-echo SCRIPT_DIR
+printf "DIR: ${SCRIPT_DIR}"
 
 if [[ $MACHINE == "Mac" ]]; then
     printf "${GREEN}Installing XCode dev tools...${NC}\n"
