@@ -10,6 +10,7 @@ brew "fzf"
 brew "ripgrep"
 brew "fd"
 brew "neovim"
+brew "rsync"
 
 cask "kdiff3"
 cask "visual-studio-code"
