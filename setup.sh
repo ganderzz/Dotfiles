@@ -16,7 +16,7 @@ esac
 
 printf "${GREEN}----------------------------------${NC}\n"
 printf "${GREEN}| Initializing DEV Environment... |${NC}\n"
-printf "${YELLOW}| Setting up for ${MACHINE} |${NC}\n"
+printf "${YELLOW}| Setting up for ${MACHINE}   |${NC}\n"
 printf "${GREEN}----------------------------------${NC}\n\n"
 
 mkdir -p ~/.config
@@ -33,13 +33,8 @@ which -s brew
 if [[ $? != 0 ]] ; then
     # Install Homebrew
     printf "${GREEN}Installing Homebrew...${NC}\n"
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
-    if [[ $MACHINE != "Mac" ]]; then
-        (echo; echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"') >> ~/.bashrc
-        eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-    fi
-    
+    export NONINTERACTIVE=1 # Don't ask for passwords
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"    
 else
     printf "${YELLOW}Homebrew already installed. Updating...${NC}\n"
     brew update
