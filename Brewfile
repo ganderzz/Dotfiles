@@ -2,7 +2,7 @@ tap "homebrew/cask-fonts"
 
 brew "starship"
 brew "tmux"
-brew "exa"
+brew "eza"
 brew "node"
 brew "yarn"
 brew "nvm"
