@@ -16,13 +16,18 @@ require("lazy").setup({
 	{"williamboman/mason.nvim" },
 	{"williamboman/mason-lspconfig.nvim"},
 	{"neovim/nvim-lspconfig" },
-        {
-          "nvim-telescope/telescope.nvim",
-	  tag = "0.1.2",
-      	  dependencies = { "nvim-lua/plenary.nvim" }
-        },
+    {
+        "nvim-telescope/telescope.nvim",
+        tag = "0.1.2",
+        dependencies = { "nvim-lua/plenary.nvim" }
+    },
+	{
+      "ThePrimeagen/harpoon",
+      branch = "harpoon2",
+      dependencies = { "nvim-lua/plenary.nvim" }
+    },
 	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 }
 })
 
 require("options")
-require("plugin_config")
+require("plugins")
