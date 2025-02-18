@@ -1,5 +1,3 @@
-tap "homebrew/cask-fonts"
-
 brew "starship"
 brew "tmux"
 brew "eza"
@@ -10,11 +8,11 @@ brew "fzf"
 brew "ripgrep"
 brew "fd"
 brew "neovim"
+brew "helix"
 brew "rsync"
 
-cask "kdiff3"
 cask "visual-studio-code"
-cask "alacritty"
+cask "ghostty"
 cask "obsidian"
 
 cask "font-fira-mono-nerd-font"
