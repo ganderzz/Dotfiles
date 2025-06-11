@@ -10,6 +10,8 @@ brew "fd"
 brew "neovim"
 brew "helix"
 brew "rsync"
+brew "atuin"
+brew "lazygit"
 
 cask "visual-studio-code"
 cask "ghostty"

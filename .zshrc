@@ -24,6 +24,13 @@ alias ls="eza"
 alias ll="eza -l"
 alias py="python3"
 alias g="git"
+alias gs="git stash"
+alias gc="git commit"
+alias gb="git checkout -b"
 alias grep="rg"
+alias lg="lazygit"
+alias t="tmux"
+
+eval "$(atuin init zsh)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
